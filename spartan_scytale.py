@@ -4,7 +4,7 @@ import numpy as np
 def split(word):
     return list(word)
 
-def decrypt(text, size):
+def decrypt_spartan_scytale(text, size):
     ptext = ''
     text = split(text)
     output = np.array(text)
@@ -17,7 +17,7 @@ def decrypt(text, size):
     return ptext
 
 
-def encrypt(text, size):
+def encrypt_spartan_scytale(text, size):
     if len(text) > size * size:
         return 'Cannot be encrypted [text size exceed array limits]'
     else:
