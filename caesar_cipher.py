@@ -1,4 +1,5 @@
 def encrypt_caesar_cipher(text, increment=3):
+    text = text.lower()
     letters = []
     keys = []
     cipher = ''
@@ -42,7 +43,7 @@ def decrypt_caesar_cipher(text, decrement=3):
     return cipher
 
 if __name__ == "__main__" :
-    planeText = "anshuman"
+    planeText = "ANSHUMAN"
     cipherText = encrypt_caesar_cipher(planeText, increment=5)
     print("Ciphertext: ", cipherText)
     print("Original/Decrypted Text :", decrypt_caesar_cipher(cipherText, decrement=5))
