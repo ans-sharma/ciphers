@@ -20,12 +20,8 @@ def decrypt_rail_fence(cypher):
     # print('Decrypted test:', part1.replace('@',''))
     return part1.replace('@', '')
 
-
-
-
-
-
-
-
-
-
+if __name__ == "__main__" :
+    planeText = "ANSHUMAN"
+    cipherText = encrypt_rail_fence(planeText)
+    print("Ciphertext: ", cipherText)
+    print("Original/Decrypted Text :", decrypt_rail_fence(cipherText))

@@ -34,3 +34,10 @@ def encrypt_spartan_scytale(text, size):
         for letter in output:
             cypher += letter
         return cypher
+
+
+if __name__ == "__main__" :
+    planeText = "ANSHUMAN"
+    cipherText = encrypt_spartan_scytale(planeText, 4)
+    print("Ciphertext: ", cipherText)
+    print("Original/Decrypted Text :", decrypt_spartan_scytale(cipherText, 4))
