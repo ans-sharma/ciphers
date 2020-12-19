@@ -41,6 +41,8 @@ def decrypt_caesar_cipher(text, decrement=3):
             cipher += ' '
     return cipher
 
-
-
-
+if __name__ == "__main__" :
+    planeText = "anshuman"
+    cipherText = encrypt_caesar_cipher(planeText, increment=5)
+    print("Ciphertext: ", cipherText)
+    print("Original/Decrypted Text :", decrypt_caesar_cipher(cipherText, decrement=5))
