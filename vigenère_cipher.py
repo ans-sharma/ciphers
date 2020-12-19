@@ -34,8 +34,8 @@ if __name__ == "__main__":
     keyword = "PROGRAMMER"
     key = generateKey(string, keyword)
     cipher_text = encrypt_vigenere_cipher(string, key)
-    print("Ciphertext :", cipher_text)
-    print("Original/Decrypted Text :",
+    print("Ciphertext: ", cipher_text)
+    print("Original/Decrypted Text: ",
           decrypt_vigenere_cipher(cipher_text, key))
 
 
