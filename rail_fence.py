@@ -13,10 +13,10 @@ def encrypt_rail_fence(text):
     return text
 
 
-def decrypt_rail_fence(cypher):
+def decrypt_rail_fence(cipher):
     part1 = ''
-    for letter in range(0, int(len(cypher) / 2)):
-        part1 += cypher[letter] + cypher[letter + int(len(cypher) / 2)]
+    for letter in range(0, int(len(cipher) / 2)):
+        part1 += cipher[letter] + cipher[letter + int(len(cipher) / 2)]
     # print('Decrypted test:', part1.replace('@',''))
     return part1.replace('@', '')
 
