@@ -21,6 +21,7 @@ cypher = ''
     for letter in output:
         cypher += letter
 ```
+![Spartans Scytale](https://en.wikipedia.org/wiki/Scytale#/media/File:Skytale.png)
 
 Implementing a Scytale using a 2 dimensional array.
 
