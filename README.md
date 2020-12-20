@@ -2,11 +2,11 @@
 
 [![Python](https://img.shields.io/badge/Python-3.7.7-blue)](https://www.python.org/downloads/windows/)
 
-### Spartans Scytale
+### [Spartans Scytale](https://github.com/ans-sharma/ciphers/blob/master/spartan_scytale.py)
 
 In cryptography, a scytale is a tool used to perform a transposition cipher, consisting of a cylinder with a strip of parchment wound around it on which is written a message. The ancient Greeks, and the Spartans in particular, are said to have used this cipher to communicate during military campaigns. 
 
-###### Encryption
+##### Encryption
     ```cypher = ''
         text = split(text)
         output = np.array(text)
