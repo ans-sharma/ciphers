@@ -30,14 +30,16 @@ Rail Fence Encryption uses an integer for the number of levels of the zigzag.The
 
 ##### Encryption
 
-    if len(text) % 2 != 0:
-        text += '@'
-    for letter in range(0, len(text)):
-        if letter % 2 == 0:
-            part1 += text[letter]
-        else:
-            part2 += text[letter]
-    text = part1 + part2
+``` python
+if len(text) % 2 != 0:
+    text += '@'
+for letter in range(0, len(text)):
+    if letter % 2 == 0:
+        part1 += text[letter]
+    else:
+        part2 += text[letter]
+text = part1 + part2
+```
 
 "@" is used a filled value in the method.
 
@@ -47,12 +49,13 @@ The Vigenère cipher is a method of encrypting alphabetic text by using a series
 
 ##### Encryption
 
-    for i in range(len(string)):
-        x = (ord(string[i]) +
-             ord(key[i])) % 26
-        x += ord('A')
-        cipher_text.append(chr(x))
-
+``` python
+for i in range(len(string)):
+    x = (ord(string[i]) +
+         ord(key[i])) % 26
+    x += ord('A')
+    cipher_text.append(chr(x))
+```
 
 ### [Caesar Cipher](https://github.com/ans-sharma/ciphers/blob/master/caesar_cipher.py)
 
@@ -60,12 +63,14 @@ Caesar cipher, also known as Caesar's cipher, the shift cipher, Caesar's code or
 
 #### Encryption
 
-    keys = [x.upper() for x in keys]
-    for l in text:
-        for i in range(0, 26):
-            if l == letters[i]:
-                cipher += keys[i]
-        if l == ' ':
-            cipher += ' '
+``` python
+keys = [x.upper() for x in keys]
+for l in text:
+    for i in range(0, 26):
+        if l == letters[i]:
+            cipher += keys[i]
+    if l == ' ':
+        cipher += ' '
+```
 
 
