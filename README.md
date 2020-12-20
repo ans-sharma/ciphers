@@ -28,7 +28,7 @@ Implementing a Scytale using a 2 dimensional array.
 Rail Fence Encryption uses an integer for the number of levels of the zigzag.The encoded message is written in zig-zag (like a rail fence/sawtooth) along a path with N levels/floors.
 
 ##### Encryption
-    ```python
+    ``` python
     if len(text) % 2 != 0:
         text += '@'
     for letter in range(0, len(text)):
