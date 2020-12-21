@@ -1,4 +1,4 @@
-def encrypt_alphabetical_disorder_cipher(text):
+def encrypt_alphabetical_disorder(text):
     import random
     text = text.upper()
     tempValue = ""
@@ -17,7 +17,7 @@ def encrypt_alphabetical_disorder_cipher(text):
             # tempValue = ""
     return cipherText
 
-def decrypt_alphabetical_disorder_cipher(cipher):
+def decrypt_alphabetical_disorder(cipher):
     cipher = cipher.lower()
     cipher = cipher.replace(" ", "")
     tempValue = ""
