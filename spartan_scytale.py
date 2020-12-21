@@ -21,7 +21,7 @@ def encrypt_spartan_scytale(text, size):
     if len(text) > size * size:
         return 'Cannot be encrypted [text size exceed array limits]'
     else:
-        cypher = ''
+        cipher = ''
         text = split(text)
         output = np.array(text)
         output.resize(size, size)
@@ -32,8 +32,8 @@ def encrypt_spartan_scytale(text, size):
         output = output.transpose()
         output = output.flatten()
         for letter in output:
-            cypher += letter
-        return cypher
+            cipher += letter
+        return cipher
 
 
 if __name__ == "__main__" :
