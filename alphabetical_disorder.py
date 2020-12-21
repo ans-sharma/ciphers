@@ -35,7 +35,7 @@ def decrypt_alphabetical_disorder(cipher):
 
 if __name__ == "__main__":
     planeText = "Anshuman"
-    cipherText = encrypt_alphabetical_disorder_cipher(planeText)
+    cipherText = encrypt_alphabetical_disorder(planeText)
     print("Ciphertext: ", cipherText)
-    print("Original/Decrypted Text :", decrypt_alphabetical_disorder_cipher(cipherText))
+    print("Original/Decrypted Text :", decrypt_alphabetical_disorder(cipherText))
     
