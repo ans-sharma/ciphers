@@ -54,7 +54,7 @@ for letter in range(0, len(text)):
 text = part1 + part2
 ```
 
-"@" is used a filled value in the method.
+"@" is used as a filler value in this method.
 
 ### [Vigenere Cipher](https://github.com/ans-sharma/ciphers/blob/master/vigen%C3%A8re_cipher.py)
 
