@@ -8,9 +8,9 @@ The skip cipher is a transposition cipher that consists of extracting the letter
 
 ##### Encryption
 ``` python
-    for i in range(1, len(text)):
-        start = (start + step) % len(text)
-        cipher = cipher + text[start]
+for i in range(1, len(text)):
+    start = (start + step) % len(text)
+    cipher = cipher + text[start]
 ```
 
 The Encryption and Decryption logic are same in the case of Skip Code.
